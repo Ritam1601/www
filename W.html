@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@400&display=swap">
+
+
+<style>
+body {
+font-family: 'Pacifico', cursive;
+background-color: #f8f8f8;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+
+.birthday-card {
+max-width: 400px;
+margin: 50px auto;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+animation: fadeIn 2s ease-out;
+}
+
+
+h1 {
+color: red;
+font-family: 'Pacifico', cursive;
+animation: bounce 2s infinite;
+font-size: 2em; /* Adjust font size as needed */
+}
+
+
+p {
+color: #333;
+font-family: 'Pacifico', cursive;
+animation: rainbowFade 6s infinite;
+}
+
+
+.memory {
+margin-top: 20px;
+opacity: 0;
+animation: fadeAndSlideIn 2s ease-out forwards; /* Custom animation for memories */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+transform: translateY(0);
+}
+40% {
+transform: translateY(-20px);
+}
+60% {
+transform: translateY(-10px);
+}
+}
+
+
+@keyframes rainbowFade {
+0%, 100% {
+color: #ff0000; /* Red */
+}
+16.67% {
+color: #ff9900; /* Orange */
+}
+33.33% {
+color: #ffff00; /* Yellow */
+}
+50% {
+color: #00ff00; /* Green */
+}
+66.67% {
+color: #0000ff; /* Blue */
+}
+83.33% {
+color: #ff00ff; /* Purple */
+}
+}
+
+
+@keyframes fadeAndSlideIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+/* Style for the photograph */
+.photograph {
+width: 100%;
+max-width: 300px; /* Adjust the maximum width as needed */
+border-radius: 0; /* Make it square */
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="birthday-card">
+<h1>Happy Birthday, Rina❤️!</h1>
+
+
+<!-- Photograph added here -->
+<img class="photograph" src="images.jpeg" alt="Photograph of Rina">
+
+
+<p>May your day be as bright and beautiful as your smile.
+May the year ahead bring you endless Love, happiness and success. </p>
+
+
+</div> <!-- Close the birthday card div -->
+
+
+</body>
+</html>
+
